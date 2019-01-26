@@ -1,10 +1,12 @@
 import React from 'react';
 import styles from './Profile.css'
 
-const Profile = () => {
+const Profile = ({position}) => {
     return(
         <div>
-            <p>abcd</p>
+            <p>
+                {`${position}`}
+            </p>
 
         </div>
     )
