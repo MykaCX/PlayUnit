@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Profile from './Profile/Profile';
+import Events from './Events/Events';
 import Chat from './Chat/Chat';
 
 class Home extends Component {
@@ -7,7 +8,7 @@ class Home extends Component {
         return (
             <div className="Home">
                 <Profile />
-                <Chat />
+                <Events />
             </div>
         );
     }

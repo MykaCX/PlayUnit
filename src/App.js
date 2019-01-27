@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import profilePic from './profilePic.svg';
 import Profile from './Components/Profile/Profile';
+import Events from './Components/Events/Events';
 import Chat from './Components/Chat/Chat';
 import './App.css';
 import { resolve, reject } from 'q';
-import {BrowserRouter, Route} from 'react-router-dom';
+import { BrowserRouter, Route } from 'react-router-dom';
 import Rewards from './Components/Rewards'
 import Home from './Components/Home'
 import MyEvents from './Components/MyEvents'
@@ -57,15 +58,17 @@ class App extends Component {
   // constructor() {
   //   super();
   //   this.state = initialState;
-  // }
+  // 
 
   render() {
     return (
       <BrowserRouter>
         <div className="App">
+
           <Route path='/Rewards' component={Rewards}/>
           <Route path='/Home' component={Home}/>
           <Route path='/MyEvents' component={MyEvents}/>
+
         </div>
       </BrowserRouter>
     );
