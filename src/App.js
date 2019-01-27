@@ -4,6 +4,9 @@ import Profile from './Components/Profile/Profile';
 import Chat from './Components/Chat/Chat';
 import './App.css';
 import { resolve, reject } from 'q';
+import {BrowserRouter, Route} from 'react-router-dom';
+import Rewards from './Components/Rewards'
+import Home from './Components/Home'
 
 // var options ={
 //   enableHighAccuracy: true,
@@ -57,12 +60,12 @@ class App extends Component {
 
   render() {
     return (
-
-
-      <div className="App">
-        <Profile />
-        <Chat />
-      </div>
+      <BrowserRouter>
+        <div className="App">
+          <Route path='/Rewards' component={Rewards}/>
+          <Route path='/Home' component={Home}/>
+        </div>
+      </BrowserRouter>
     );
   }
 }

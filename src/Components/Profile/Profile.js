@@ -17,7 +17,7 @@ const Profile = () => {
                 </Navbar.Header>
                 <Navbar.Collapse>
                     <Navbar.Text>
-                        | Points: <Navbar.Link href="https://www.facebook.com">1500 |</Navbar.Link>
+                        | Points: <Navbar.Link href="/Rewards">1500 |</Navbar.Link>
                     </Navbar.Text>
                     <Navbar.Text pullLeft>Basketball</Navbar.Text>
                     <Navbar.Text pullLeft>Jogging</Navbar.Text>
