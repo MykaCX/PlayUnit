@@ -59,19 +59,7 @@ class App extends Component {
 
 
       <div className="App">
-<<<<<<< HEAD
         <Profile />
-
-        <header className="App-header">
-          <img src={profilePic} />
-
-
-        </header>
-=======
-        <Profile 
-          position = {this.state.lat}
-        />
->>>>>>> 0a7799c0ef41c4aa4a030fa29ddfc16ace452034
       </div>
     );
   }
