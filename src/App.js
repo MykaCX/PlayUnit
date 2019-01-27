@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import profilePic from './profilePic.svg';
 import Profile from './Components/Profile/Profile';
 import './App.css';
 import { resolve, reject } from 'q';
@@ -47,6 +47,7 @@ const initialState={
   long: myVar.long
 }
 
+
 class App extends Component {
   constructor() {
     super();
@@ -55,10 +56,22 @@ class App extends Component {
 
   render() {
     return (
+
+
       <div className="App">
+<<<<<<< HEAD
+        <Profile />
+
+        <header className="App-header">
+          <img src={profilePic} />
+
+
+        </header>
+=======
         <Profile 
           position = {this.state.lat}
         />
+>>>>>>> 0a7799c0ef41c4aa4a030fa29ddfc16ace452034
       </div>
     );
   }
