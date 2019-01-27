@@ -65,9 +65,9 @@ class App extends Component {
       <BrowserRouter>
         <div className="App">
 
-          <Route path='/Rewards' component={Rewards}/>
-          <Route path='/Home' component={Home}/>
-          <Route path='/MyEvents' component={MyEvents}/>
+          <Route path='/Rewards' component={Rewards} />
+          <Route path='/Home' component={Home} />
+          <Route path='/MyEvents' component={MyEvents} />
 
         </div>
       </BrowserRouter>
