@@ -1,7 +1,8 @@
 import React from 'react';
-import { Button, NavBar } from 'react-bootstrap';
+import { Button, NavBar, Image, StyleSheet} from 'react-bootstrap';
 import Navbar from 'react-bootstrap/lib/Navbar';
-
+import './Events.css';
+import sampleimage from './LPField.jpg';
 
 
 const NearMe = () => {
@@ -23,6 +24,13 @@ const NearMe = () => {
                     <Navbar.Text pullLeft>Swimming</Navbar.Text>
                 </Navbar.Collapse>
             </Navbar>
+            <div class="header" >Events Near Me</div>
+            <div class="card">
+            <h1>Soccer at LesPrince Field</h1>
+            <h2>Dec 7, 2017</h2>
+            <img src={sampleimage} />
+            <p>Description of event blahblah</p>
+            </div>
         </div>
 
     )
