@@ -10,30 +10,41 @@ var options ={
   maximumAge: 0
 };
 
+var myString;
 var crd;
 
 function success(pos) {
   crd = pos.coords;
-
   console.log('Your current position is:');
   console.log(`Latitude : ${crd.latitude}`);
   console.log(`Longitude: ${crd.longitude}`);
   console.log(`More or less ${crd.accuracy} meters.`);
 }
 
+function showPosition(position){
+  var myString = {
+    lat: position.coords.latitude,
+    long: position.coords.longitude
+  }
+  myVar = myString;
+  return myString;
+ }
+
 function error(err) {
   console.warn(`ERROR(${err.code}): ${err.message}`);
 }
 
-navigator.geolocation.getCurrentPosition(success, error, options);
+//navigator.geolocation.getCurrentPosition(success, error, options);
+var myVar = navigator.geolocation.getCurrentPosition(showPosition);
 
-console.log(`asd: ${myLat}, ${myLong}`)
+alert(myVar)
 
+console.log(`testing : ${myString}`)
 console.log(`asd : ${crd}`)
 
 const initialState={
-  lat: crd.latitude,
-  long: crd.longitude
+  lat: myVar.lat,
+  long: myVar.long
 }
 
 class App extends Component {
