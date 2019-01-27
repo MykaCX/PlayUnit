@@ -2,7 +2,7 @@ import React from 'react';
 import { Button, NavBar, Image, StyleSheet} from 'react-bootstrap';
 import Navbar from 'react-bootstrap/lib/Navbar';
 import './Events.css';
-import sampleimage from './LPField.jpq';
+import sampleimage from './LPField.jpg';
 
 
 const MyEvents = () => {
