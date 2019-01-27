@@ -4,6 +4,7 @@ import { Button, NavBar } from 'react-bootstrap';
 import Navbar from 'react-bootstrap/lib/Navbar';
 
 
+<<<<<<< HEAD
 const Profile = () => {
     return (
         <div>
@@ -23,6 +24,15 @@ const Profile = () => {
                     <Navbar.Text pullLeft>Swimming</Navbar.Text>
                 </Navbar.Collapse>
             </Navbar>
+=======
+const Profile = ({position}) => {
+    return(
+        <div>
+            <p>
+                {`${position}`}
+            </p>
+
+>>>>>>> 0a7799c0ef41c4aa4a030fa29ddfc16ace452034
         </div>
 
     )
