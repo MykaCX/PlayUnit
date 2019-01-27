@@ -7,6 +7,7 @@ import { resolve, reject } from 'q';
 import {BrowserRouter, Route} from 'react-router-dom';
 import Rewards from './Components/Rewards'
 import Home from './Components/Home'
+import MyEvents from './Components/MyEvents'
 
 // var options ={
 //   enableHighAccuracy: true,
@@ -64,6 +65,7 @@ class App extends Component {
         <div className="App">
           <Route path='/Rewards' component={Rewards}/>
           <Route path='/Home' component={Home}/>
+          <Route path='/MyEvents' component={MyEvents}/>
         </div>
       </BrowserRouter>
     );
