@@ -5,7 +5,7 @@ import './Events.css';
 import sampleimage from './LPField.jpg';
 
 
-const MyEvents = () => {
+const NearMe = () => {
     return (
         <div>
             <Navbar>
@@ -24,7 +24,7 @@ const MyEvents = () => {
                     <Navbar.Text pullLeft>Swimming</Navbar.Text>
                 </Navbar.Collapse>
             </Navbar>
-            <div class="header" >My Events</div>
+            <div class="header" >Events Near Me</div>
             <div class="card">
             <h1>Soccer at LesPrince Field</h1>
             <h2>Dec 7, 2017</h2>
@@ -36,4 +36,4 @@ const MyEvents = () => {
     )
 }
 
-export default MyEvents
+export default NearMe

@@ -9,6 +9,8 @@ import { BrowserRouter, Route } from 'react-router-dom';
 import Rewards from './Components/Rewards'
 import Home from './Components/Home'
 import MyEvents from './Components/MyEvents'
+import CreateEvents from './Components/CreateEvents'
+import NearMe from './Components/NearMe'
 
 // var options ={
 //   enableHighAccuracy: true,
@@ -65,10 +67,19 @@ class App extends Component {
       <BrowserRouter>
         <div className="App">
 
+<<<<<<< HEAD
           <Route path='/Rewards' component={Rewards} />
           <Route path='/Home' component={Home} />
           <Route path='/MyEvents' component={MyEvents} />
 
+=======
+          <Route path='/Rewards' component={Rewards}/>
+          <Route path='/Home' component={Home}/>
+          <Route path='/MyEvents' component={MyEvents}/>
+          <Route path='/CreateEvents' component={CreateEvents}/>
+          <Route path='/NearMe' component={NearMe}/>
+          
+>>>>>>> 969c77757b4b0fd4fb1d1b2da9465b469ffb20c7
         </div>
       </BrowserRouter>
     );

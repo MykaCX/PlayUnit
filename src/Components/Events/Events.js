@@ -5,16 +5,17 @@ import Navbar from 'react-bootstrap/lib/Navbar';
 
 const Events = () => {
     return (
-        <div >
-            <Button bsStyle="primary" bsSize="large" block>
-                My Events
+        <div>
+            <Button href = "/MyEvents" bsStyle="primary" bsSize="large" block>
+            My Events
         </Button>
-            <Button bsStyle="primary" bsSize="large" block onClick={() => alert('fuck you')}>
+            <Button href = "/CreateEvents" bsStyle="primary" bsSize="large" block>
                 Create Events
         </Button>
-            <Button bsStyle="primary" bsSize="large" block>
+            <Button href = "/NearMe" bsStyle="primary" bsSize="large" block>
                 Events Near Me
         </Button>
+
         </div>
     )
 }
