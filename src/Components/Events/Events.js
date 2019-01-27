@@ -1,5 +1,4 @@
 import React from 'react';
-import './Events.css';
 import { Button, NavBar } from 'react-bootstrap';
 import Navbar from 'react-bootstrap/lib/Navbar';
 
