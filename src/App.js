@@ -1,16 +1,16 @@
-import React, { Component } from 'react';
-import profilePic from './profilePic.svg';
-import Profile from './Components/Profile/Profile';
-import Events from './Components/Events/Events';
-import Chat from './Components/Chat/Chat';
-import './App.css';
-import { resolve, reject } from 'q';
-import { BrowserRouter, Route } from 'react-router-dom';
-import Rewards from './Components/Rewards'
-import Home from './Components/Home'
-import MyEvents from './Components/MyEvents'
-import CreateEvents from './Components/CreateEvents'
-import NearMe from './Components/NearMe'
+import React, { Component } from "react";
+import profilePic from "./profilePic.svg";
+import Profile from "./Components/Profile/Profile";
+import Events from "./Components/Events/Events";
+import Chat from "./Components/Chat/Chat";
+import "./App.css";
+import { resolve, reject } from "q";
+import { BrowserRouter, Route } from "react-router-dom";
+import Rewards from "./Components/Rewards";
+import Home from "./Components/Home";
+import MyEvents from "./Components/MyEvents";
+import CreateEvents from "./Components/CreateEvents";
+import NearMe from "./Components/NearMe";
 
 // var options ={
 //   enableHighAccuracy: true,
@@ -55,31 +55,22 @@ import NearMe from './Components/NearMe'
 //   long: myVar.long
 // }
 
-
 class App extends Component {
   // constructor() {
   //   super();
   //   this.state = initialState;
-  // 
+  //
 
   render() {
     return (
       <BrowserRouter>
         <div className="App">
-
-<<<<<<< HEAD
-          <Route path='/Rewards' component={Rewards} />
-          <Route path='/Home' component={Home} />
-          <Route path='/MyEvents' component={MyEvents} />
-
-=======
-          <Route path='/Rewards' component={Rewards}/>
-          <Route path='/Home' component={Home}/>
-          <Route path='/MyEvents' component={MyEvents}/>
-          <Route path='/CreateEvents' component={CreateEvents}/>
-          <Route path='/NearMe' component={NearMe}/>
-          
->>>>>>> 969c77757b4b0fd4fb1d1b2da9465b469ffb20c7
+          <Home />
+          <Route path="/Rewards" component={Rewards} />
+          <Route path="/Home" component={Home} />
+          <Route path="/MyEvents" component={MyEvents} />
+          <Route path="/CreateEvents" component={CreateEvents} />
+          <Route path="/NearMe" component={NearMe} />
         </div>
       </BrowserRouter>
     );
