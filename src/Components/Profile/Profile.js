@@ -21,6 +21,7 @@ const Profile = () => {
           <Navbar.Text pullLeft>Jogging</Navbar.Text>
           <Navbar.Text pullLeft>Swimming</Navbar.Text>
           <Navbar.Text pullRight>Status: Active</Navbar.Text>
+          <Navbar.Text pullRight>Age: 20</Navbar.Text>
         </Navbar.Collapse>
       </Navbar>
     </div>
